@@ -1,0 +1,96 @@
+{
+  "name": "Renou Homes",
+  "description": "Estate transition services platform - Next.js website with MDX content management for helping families downsize, navigate divorce, or settle estates",
+  "version": "1.0.0",
+  "repository": "https://github.com/Happy-Hippopotam-us/renou",
+  "context": {
+    "project_phase": "MVP - Marketing website to generate leads while building full platform",
+    "stack": "Next.js 15, TypeScript, Tailwind CSS, MDX",
+    "deployment": "Vercel (pending setup)",
+    "local_path": "~/Sites/renou",
+    "dev_server": "npm run dev → http://localhost:3000",
+    "business_model": "Estate services → Inventory management SaaS platform",
+    "team": {
+      "paul": "Developer (Dorf on GitHub), WordPress/Laravel Valet background",
+      "tita": "Content editor, non-developer, will use Claude Code for editing"
+    }
+  },
+  "key_files": {
+    "content": [
+      "app/services/page.mdx - Service offerings",
+      "app/how-it-works/page.mdx - Process explanation", 
+      "app/about/page.mdx - Company story",
+      "app/contact/page.tsx - Contact form page"
+    ],
+    "components": [
+      "app/layout.tsx - Site-wide layout, nav, footer",
+      "app/page.tsx - Homepage with hero and sections",
+      "components/ContactForm.tsx - Reusable contact form"
+    ],
+    "config": [
+      "next.config.mjs - MDX configuration",
+      "mdx-components.tsx - MDX styling",
+      "tailwind.config.ts - Tailwind setup"
+    ]
+  },
+  "content_editing": {
+    "format": "MDX files in app/ directory",
+    "editing": "Ask Claude to update content in plain language",
+    "example": "Claude, update the services page to add a premium package for $5,000",
+    "deployment": "Changes auto-deploy when pushed to main branch"
+  },
+  "immediate_tasks": [
+    "Add placeholder images to content pages",
+    "Deploy to Vercel",
+    "Set up contact form email service (Resend)",
+    "Connect custom domain",
+    "Finalize content with Tita"
+  ],
+  "future_features": [
+    "Client authentication portal",
+    "Database for projects and inventory",
+    "Photo upload and cataloging tool",
+    "AI-powered item valuation",
+    "Marketplace integrations (eBay, Facebook)",
+    "Payment processing (Stripe)",
+    "PWA conversion for mobile app experience"
+  ],
+  "development": {
+    "branch_strategy": "main = production, feature branches as needed",
+    "commit_style": "Clear descriptive messages",
+    "testing": "Manual before push (automated later)",
+    "deployment": "Auto-deploy from main via Vercel"
+  },
+  "design_system": {
+    "colors": "Blue primary (#2563eb), warm grays",
+    "typography": "Inter font family",
+    "approach": "Mobile-first responsive",
+    "framework": "Tailwind utility classes"
+  },
+  "common_commands": {
+    "dev": "npm run dev - Start development server",
+    "build": "npm run build - Build for production",
+    "lint": "npm run lint - Check code quality",
+    "git_workflow": "git add . && git commit -m 'message' && git push"
+  },
+  "environment_variables": {
+    "local": ".env.local (not in git)",
+    "production": "Set in Vercel dashboard",
+    "needed": [
+      "RESEND_API_KEY - for contact form emails",
+      "NEXT_PUBLIC_SITE_URL - production domain"
+    ]
+  },
+  "notes": {
+    "philosophy": "Deploy early, iterate fast, keep it simple for MVP",
+    "content_strategy": "Content in git = easy collaboration and version control",
+    "mobile_first": "Always design and test mobile experience first",
+    "non_dev_friendly": "Tita can edit content by talking to Claude naturally"
+  },
+  "help_resources": {
+    "context_file": "See PROJECT_CONTEXT.md for detailed information",
+    "next_docs": "https://nextjs.org/docs",
+    "tailwind_docs": "https://tailwindcss.com/docs",
+    "mdx_docs": "https://mdxjs.com/docs"
+  }
+}
