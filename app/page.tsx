@@ -12,7 +12,7 @@ export default function Home() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-blue-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-renou-forest/80 to-renou-forest/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-center w-full">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition"
+                className="bg-renou-gold text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-renou-gold/90 transition shadow-lg"
               >
                 Get Started
               </a>
@@ -41,36 +41,36 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-renou-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-renou-charcoal">
             How We Help
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-white p-8 rounded-lg shadow-sm">
+              <div className="bg-renou-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">📸</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Catalog Everything</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-renou-charcoal">Catalog Everything</h3>
+              <p className="text-renou-gray">
                 We photograph and document every item in your home, room by room
               </p>
             </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-white p-8 rounded-lg shadow-sm">
+              <div className="bg-renou-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💰</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Value & Organize</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-renou-charcoal">Value & Organize</h3>
+              <p className="text-renou-gray">
                 Professional appraisal and categorization for sale, donation, or heirlooms
               </p>
             </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center bg-white p-8 rounded-lg shadow-sm">
+              <div className="bg-renou-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Manage the Process</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-renou-charcoal">Manage the Process</h3>
+              <p className="text-renou-gray">
                 From repairs to sales to distribution, we handle the details
               </p>
             </div>
@@ -79,17 +79,17 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 py-16">
+      <section className="bg-renou-forest py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Begin Your Transition?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-renou-cream/90 mb-8">
             Schedule a free consultation to discuss your needs
           </p>
           <a
             href="/contact"
-            className="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block"
+            className="bg-renou-gold text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-renou-gold/90 transition inline-block shadow-lg"
           >
             Contact Us Today
           </a>
