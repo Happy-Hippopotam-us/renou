@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,8 +22,14 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex-shrink-0">
-                <a href="/" className="text-2xl font-bold text-renou-forest">
-                  Renou Homes
+                <a href="/" className="flex items-center">
+                  <Image
+                    src="/renou-logo.png"
+                    alt="Renou Homes"
+                    width={180}
+                    height={60}
+                    className="h-12 w-auto"
+                  />
                 </a>
               </div>
               <div className="hidden md:flex space-x-8">
@@ -58,7 +65,16 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-xl font-bold mb-4 text-renou-gold">Renou Homes</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/renou-icon.png"
+                    alt="Renou Homes Icon"
+                    width={40}
+                    height={40}
+                    className="w-10 h-10"
+                  />
+                  <h3 className="text-xl font-bold text-renou-gold">Renou Homes</h3>
+                </div>
                 <p className="text-renou-cream/80">
                   Helping families transition with dignity and care
                 </p>
