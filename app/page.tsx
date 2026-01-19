@@ -16,7 +16,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-center w-full">
             <h1 className="text-renou-forest text-4xl md:text-6xl font-bold text-white mb-6">
-              Transition Your Home with Dignity
+              Transition Your Home with Dignity!
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               Professional estate management for downsizing, divorce, and life transitions.
