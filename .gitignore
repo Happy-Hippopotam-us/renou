@@ -31,4 +31,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-Golden Nest brochure.pdf
+
+#local settings and content
+.claude/settings.local.json
+/local source content
