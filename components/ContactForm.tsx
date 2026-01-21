@@ -8,7 +8,7 @@ export default function ContactForm() {
     email: '',
     phone: '',
     message: '',
-    serviceType: 'downsizing'
+    serviceType: 'decluttering'
   })
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
@@ -26,7 +26,7 @@ export default function ContactForm() {
 
       if (response.ok) {
         setStatus('success')
-        setFormData({ name: '', email: '', phone: '', message: '', serviceType: 'downsizing' })
+        setFormData({ name: '', email: '', phone: '', message: '', serviceType: 'decluttering' })
       } else {
         setStatus('error')
       }
@@ -48,7 +48,7 @@ export default function ContactForm() {
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-renou-gold focus:border-transparent"
           />
         </div>
 
@@ -62,7 +62,7 @@ export default function ContactForm() {
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-renou-gold focus:border-transparent"
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function ContactForm() {
             id="phone"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-renou-gold focus:border-transparent"
           />
         </div>
 
@@ -88,11 +88,12 @@ export default function ContactForm() {
             required
             value={formData.serviceType}
             onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-renou-gold focus:border-transparent"
           >
-            <option value="downsizing">Downsizing</option>
-            <option value="divorce">Divorce Transition</option>
-            <option value="estate">Estate Settlement</option>
+            <option value="decluttering">Professional Home Decluttering & Organizing</option>
+            <option value="downsizing">Downsizing & Move Preparation</option>
+            <option value="concierge">Concierge Coordination</option>
+            <option value="legacy">Legacy & Keepsake Support</option>
             <option value="other">Other</option>
           </select>
         </div>
@@ -107,14 +108,14 @@ export default function ContactForm() {
             rows={5}
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-renou-gold focus:border-transparent"
           />
         </div>
 
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition disabled:bg-gray-400"
+          className="w-full bg-renou-gold text-white py-3 px-6 rounded-lg font-semibold hover:bg-renou-gold/90 transition disabled:bg-gray-400"
         >
           {status === 'submitting' ? 'Sending...' : 'Send Message'}
         </button>

@@ -18,7 +18,7 @@ export default function ContactPage() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-2xl mx-auto">
           <div>
             <h3 className="font-semibold text-lg mb-2 text-renou-charcoal">Email</h3>
-            <p className="text-renou-gray">hello@renouhomes.com</p>
+            <p className="text-renou-gray">hello@renou.homes</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg mb-2 text-renou-charcoal">Phone</h3>
