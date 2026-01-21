@@ -152,7 +152,7 @@ The contact form currently logs to console. To activate email:
 Create `.env.local`:
 ```
 RESEND_API_KEY=your_key_here
-NEXT_PUBLIC_SITE_URL=https://renouhomes.com
+NEXT_PUBLIC_SITE_URL=https://renou.homes
 ```
 
 ## Future Enhancements

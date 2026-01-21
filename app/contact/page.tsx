@@ -22,7 +22,7 @@ export default function ContactPage() {
           </div>
           <div>
             <h3 className="font-semibold text-lg mb-2 text-renou-charcoal">Phone</h3>
-            <p className="text-renou-gray">(215) 416-7955</p>
+            <p className="text-renou-gray">(215) 416-7952</p>
           </div>
         </div>
       </div>

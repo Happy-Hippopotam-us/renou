@@ -91,8 +91,8 @@ export default function RootLayout({
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <p className="text-renou-cream/80">
-                  Email: info@renouhomes.com<br />
-                  Phone: (555) 123-4567
+                  Email: hello@renou.homes<br />
+                  Phone: (215) 416-7952
                 </p>
               </div>
             </div>
